@@ -1,0 +1,43 @@
+{
+  "name": "Json Bot",
+  "description": "Telegram Json Bot: Get JSON text easily.",
+  "keywords": [
+    "telegram",
+    "json",
+    "bot"
+  ],
+  "logo": "https://telegra.ph/file/711895cbc2bcb3177dd80.jpg",
+  "success_url": "https://telegram.dog/harshithxdev",
+  "website": "https://github.com/HarshithXDev/JsonBot",
+  "repository": "https://github.com/HarshithXDev/JsonBot",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram bot token.",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Your Telegram API ID. Get it from https://my.telegram.org",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram user ID.",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Your Telegram API hash. Get it from https://my.telegram.org",
+      "value": ""
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "Eco"
+    }
+  }
+}
